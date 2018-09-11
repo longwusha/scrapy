@@ -1,0 +1,9 @@
+[package]
+name = "scrapy"
+version = "0.0.1"
+authors = ["陈琨 <chenkun_lws@126.com>"]
+edition = "2018"
+license = "MIT"
+description = "Pure rust implementation of web crawler framework \"scrapy\""
+
+[dependencies]
