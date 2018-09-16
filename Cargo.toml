@@ -8,6 +8,5 @@ description = "Pure rust implementation of web crawler framework \"scrapy\""
 categories = ["web-programming", "network-programming"]
 
 [dependencies]
-hyper = "0.12.9"
 pretty_env_logger = "0.2.4"
-futures = "0.1.24"
+reqwest = "0.8.8"
