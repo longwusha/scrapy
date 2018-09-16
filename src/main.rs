@@ -11,7 +11,7 @@ fn main() -> Result<(), Box<std::error::Error>> {
     let client = reqwest::Client::new();
     let mut res = client
         .post("http://httpbin.org/post")
-        .form(&params)
+        .json(&params)
         .send()?;
 
     println!("Status :{}", res.status());
