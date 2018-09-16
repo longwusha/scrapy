@@ -1,9 +1,13 @@
 extern crate reqwest;
 
+use std::collections::HashMap;
+
 fn main() -> Result<(), Box<std::error::Error>> {
     println!("POST \"hello world\" to http://httpbin.org/post");
 
-    let params = [("foo", "bar"), ("baz", "quux")];
+    let mut params = HashMap::new();
+    params.insert("lang", "rust");
+    params.insert("body", "json");
     let client = reqwest::Client::new();
     let mut res = client
         .post("http://httpbin.org/post")
